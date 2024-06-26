@@ -1,0 +1,43 @@
+{
+	"inputs": [
+		{
+			"name": "ssh_private_key",
+			"required": true,
+			"type": "password",
+			"hidden": false,
+			"custom_config": {}
+		},
+		{
+			"name": "prefix",
+			"required": true,
+			"type": "string",
+			"hidden": false,
+			"default": "stackDemo",
+			"custom_config": {}
+		},
+		{
+			"name": "ssh_key",
+			"required": true,
+			"type": "string",
+			"hidden": false,
+			"default": "__NOT_SET__",
+			"custom_config": {}
+		}
+	],
+	"members": [
+		{
+			"inputs": [
+				{
+					"name": "ssh_key",
+					"value": "ref:../../inputs/ssh_key"
+				},
+				{
+					"name": "prefix",
+					"value": "ref:../../inputs/prefix"
+				}
+			],
+			"name": "Test SLZ",
+			"version_locator": "33eb1d96-dfb4-4d60-a21a-c376ed0c89c3.65ac764a-74e4-4717-acfa-6bdbe1e405d7"
+		}
+	]
+}
